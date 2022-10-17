@@ -27,6 +27,11 @@ extensions = [
     'hoverxref.extension',
 ]
 
+myst_enable_extensions = [
+    "amsmath",
+    "dollarmath"
+]
+
 # templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
