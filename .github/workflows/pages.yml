@@ -12,6 +12,11 @@ jobs:
       with:
         python-version: 3.8
 
+    - name: Configure latex math support
+      shell: bash
+      run: |
+        sudo apt install -y texlive-xetex dvipng
+
     - uses: actions/checkout@master
       with:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
